@@ -8,6 +8,6 @@ class Program
 		Console.Write(str);
 		Console.Write(str);
         Console.WriteLine(str);
-        Console.Write(str.Substring(0, 9));
+        Console.WriteLine(str.Substring(0, 9));
         }
 }
