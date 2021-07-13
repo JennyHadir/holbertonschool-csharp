@@ -8,11 +8,12 @@ class Line
             Console.WriteLine();
         else
         {
+            string spaces = "";
+            string back = "\\";
             for (int i = 0; i < length; i++)
             {
-                for (int j = 0; j < i; i++)
-                    Console.Write(" ");
-                Console.WriteLine("H");
+                Console.WriteLine(spaces + back);
+                spaces += " ";
             }
         }
     }
