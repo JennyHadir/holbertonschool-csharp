@@ -1,0 +1,11 @@
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\bin\Debug\netcoreapp2.1\3-print_alphabt.deps.json
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\bin\Debug\netcoreapp2.1\3-print_alphabt.runtimeconfig.json
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\bin\Debug\netcoreapp2.1\3-print_alphabt.runtimeconfig.dev.json
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\bin\Debug\netcoreapp2.1\3-print_alphabt.dll
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\bin\Debug\netcoreapp2.1\3-print_alphabt.pdb
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.csprojAssemblyReference.cache
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.csproj.CoreCompileInputs.cache
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.AssemblyInfoInputs.cache
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.AssemblyInfo.cs
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.dll
+C:\Users\21696\Desktop\holbertonschool-csharp\0x01-csharp-ifelse_loops_methods\3-print_alphabt\obj\Debug\netcoreapp2.1\3-print_alphabt.pdb
