@@ -6,10 +6,10 @@ namespace _14_rectangular_array
     {
         static void Main(string[] args)
         {
-            int [,] multiArray = new int [5, 6];
+            int [,] multiArray = new int [5, 5];
             for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < 5; j++)
                 {
                     multiArray[i, j] = 0;
                 }
@@ -17,9 +17,9 @@ namespace _14_rectangular_array
             multiArray[2, 2] = 1;
             for (int i = 0; i < 5; i++)
             {
-                for (int j = 0; j < 6; j++)
+                for (int j = 0; j < 5; j++)
                 {
-                    if (j != 5)
+                    if (j != 4)
                         Console.Write(multiArray[i, j] + " ");
                     else Console.WriteLine();
                 }
