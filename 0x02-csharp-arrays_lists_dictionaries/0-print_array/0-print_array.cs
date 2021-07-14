@@ -4,15 +4,16 @@ class Array
 {
         public static int[] CreatePrint(int size)
         {
+            if (size < 0)
+            {
+                Console.WriteLine("Size cannot be negative");
+                return null;
+            }
             int [] narray = new int [size];
             if (size == 0)
             {
                 Console.WriteLine();
-            }
-            else if (size < 0)
-            {
-                Console.WriteLine("Size cannot be negative");
-                return null;
+                return narray;
             }
             else
             {
@@ -22,7 +23,7 @@ class Array
                     Console.Write(narray[i] + " ");
                 }
                 Console.WriteLine();
+                return narray;
             }
-            return narray;
         }
 }
