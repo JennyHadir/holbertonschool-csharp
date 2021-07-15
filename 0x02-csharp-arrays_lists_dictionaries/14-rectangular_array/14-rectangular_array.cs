@@ -19,10 +19,11 @@ namespace _14_rectangular_array
             {
                 for (int j = 0; j < 5; j++)
                 {
+                    Console.Write(multiArray[i, j]);
                     if (j != 4)
-                        Console.Write(multiArray[i, j] + " ");
-                    else Console.WriteLine();
+                        Console.Write(" ");
                 }
+                Console.WriteLine();
             }
         }
     }
