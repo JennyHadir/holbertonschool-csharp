@@ -5,11 +5,13 @@ class LList
 {
     public static int GetNode(LinkedList<int> myLList, int n)
     {
-        int nodeData = 0;
-        if (n < myLList.Count && n > 0)
+        int index = 0;
+        foreach (var item in myLList)
         {
-            nodeData = myLList.ElementAt(n);
+            if (index == n)
+                return item;
+            index++;         
         }
-        return nodeData;
+        return 0;
     }
 }
