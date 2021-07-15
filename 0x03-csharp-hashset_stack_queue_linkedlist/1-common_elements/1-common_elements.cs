@@ -10,6 +10,7 @@ class List
             if (!list2.Contains(list1[i]))
                 nList.Remove(list1[i]);
         }
+        nList.Sort();
         return nList;
     }
 }
