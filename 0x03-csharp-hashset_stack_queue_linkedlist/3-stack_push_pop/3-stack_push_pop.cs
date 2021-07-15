@@ -13,10 +13,8 @@ class MyStack
         else
             Console.WriteLine("Top item: " + aStack.Peek());
         Console.WriteLine("Stack contains " + search +": " + aStack.Contains(search));
-        do
-        {
+        while (aStack.Contains(search))
             aStack.Pop();
-        } while (aStack.Contains(search));
         aStack.Push(newItem);
         return aStack;
     }
