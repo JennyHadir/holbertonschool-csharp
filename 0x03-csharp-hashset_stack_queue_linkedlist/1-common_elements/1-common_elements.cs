@@ -4,13 +4,12 @@ class List
 {
     public static List<int> CommonElements(List<int> list1, List<int> list2)
     {
-        List<int> nList = list1;
-        for (int i = 0; i < list1.Count; i++)
+        List<int> nList = new List<int>();
+        foreach (var item in list1)
         {
-            if (!list2.Contains(list1[i]))
-                nList.Remove(list1[i]);
+            if (list2.Contains(item))
+                nList.Add(item);
         }
-        nList.Sort();
         return nList;
     }
 }
