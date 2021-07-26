@@ -2,7 +2,7 @@
 {
     public static void ThrowMsg(string msg)
     {
-        throw new System.Exception("C is fun");
+        throw new System.Exception(msg);
     }
 }
 
