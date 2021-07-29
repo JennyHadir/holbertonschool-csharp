@@ -29,5 +29,14 @@ namespace MyMath.Tests
             int[,] NewMatrix = MyMath.Matrix.Divide(matrix, num);
             Assert.AreEqual(null, NewMatrix);
         }
+        [Test]
+        ///<summary>Test Divisions o</summary>
+        public void TestMatrixNull()
+        {
+            int[,] matrix = null;
+            int num = 2;
+            int[,] NewMatrix = MyMath.Matrix.Divide(matrix, num);
+            Assert.Null(NewMatrix);
+        }
     }
 }

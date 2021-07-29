@@ -11,7 +11,7 @@ namespace MyMath
         /// <returns> new matrix contains the division result </returns>
         public static int[,] Divide(int[,] matrix, int num)
         {
-            if (matrix.Length == 0)
+            if (matrix is null)
                 return null;
             try
             {
@@ -24,12 +24,12 @@ namespace MyMath
                     }
 
                 }
-                return NewMatrix;
+                return (NewMatrix);
             }
             catch (System.DivideByZeroException)
             {
                 Console.WriteLine("Num cannot be 0");
-                return null;
+                return (null);
             }
         }
     }
