@@ -14,8 +14,8 @@ namespace MyMath
         {
             if (nums.Count == 0)
                 return 0;
-            int max = nums.First();
-            for (int i = 0; i < nums.Count; i++)
+            int max = nums[0];
+            for (int i = 1; i < nums.Count; i++)
             {
                 if (nums[i] > max)
                     max = nums[i];
