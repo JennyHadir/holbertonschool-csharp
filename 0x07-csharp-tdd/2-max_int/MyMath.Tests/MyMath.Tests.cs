@@ -5,10 +5,6 @@ namespace MyMath.Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
 
         [Test]
         public void TestEmptyList()
@@ -23,9 +19,9 @@ namespace MyMath.Tests
             List<int> ls = new List<int>();
             ls.Add(0);
             ls.Add(-1);
-            ls.Add(6);
-            ls.Add(2);
             ls.Add(-3);
+            ls.Add(2);
+            ls.Add(6);
             Assert.AreEqual(6, MyMath.Operations.Max(ls));
         }
 
@@ -33,11 +29,11 @@ namespace MyMath.Tests
         public void TestPositiveList()
         {
             List<int> ls = new List<int>();
-            ls.Add(0);
-            ls.Add(1);
-            ls.Add(6);
-            ls.Add(2);
             ls.Add(3);
+            ls.Add(1);
+            ls.Add(0);
+            ls.Add(6);
+            ls.Add(4);
             Assert.AreEqual(6, MyMath.Operations.Max(ls));
         }
 
