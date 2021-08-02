@@ -8,7 +8,7 @@ class Obj
     ///<return>True if obj is of type int false otherwise</return>
     public static bool IsOfTypeInt(object obj)
     {
-        if (obj is int)
+        if (obj.GetType() == typeof(int))
             return true;
         return false;
     }
