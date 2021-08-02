@@ -1,7 +1,7 @@
 ﻿using System;
 
 ///<summary> Obj class.</summary>
-class Obj
+public class Obj
 {
     ///<summary> Check if obj of type int or not.</summary>
     ///<param name="obj">Object to check.</param>
