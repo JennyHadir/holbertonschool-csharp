@@ -10,6 +10,8 @@ class Shape
         throw new NotImplementedException("Area() is not implemented");
     }
 }
+
+///<summary>Rectangle Derived Class.</summary>
 class Rectangle : Shape
 {
     private int width;
