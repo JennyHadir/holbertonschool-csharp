@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 ///<summary> VectorMath class</summary>
 class VectorMath
@@ -10,16 +9,20 @@ class VectorMath
     ///<return> Vector 3 containing the addition of two vector </return>
     public static double[] Add(double[] vector1, double[] vector2)
     {
-        List<double> vector3 = new List<double>();
-        vector3[0] = -1;
-        if (vector1.Length == vector2.Length)
+        if (vector1.Length == 2 && vector2.Length == 2)
         {
-            if (vector1.Length == 3 || vector1.Length == 2)
-            {
-                for (int i = 0; i < vector2.Length; i++)
-                    vector3[i] = Math.Round((vector1[i] + vector2[i]), 2);
-            }
+            double[] vector3 = { 0, 0};
+            for (int i = 0; i < vector2.Length; i++)
+                vector3[i] = (vector1[i] + vector2[i]);
+            return vector3;
         }
-        return vector3;
+        else if (vector1.Length == 3 && vector2.Length == 3)
+        {
+            double[] vector3 = {0, 0, 0};
+            for (int i = 0; i < vector2.Length; i++)
+                vector3[i] = (vector1[i] + vector2[i]);
+            return vector3;
+        }
+        return new double[] { -1};
     }
 }
