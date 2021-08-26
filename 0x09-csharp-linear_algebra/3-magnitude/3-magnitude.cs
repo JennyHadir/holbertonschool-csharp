@@ -17,6 +17,6 @@ public class VectorMath
         {
             magnitude += (coordinat * coordinat);
         }
-        return Math.Round(Math.Sqrt(magnitude), 3);
+        return Math.Round(Math.Sqrt(magnitude), 2);
     }
 }
