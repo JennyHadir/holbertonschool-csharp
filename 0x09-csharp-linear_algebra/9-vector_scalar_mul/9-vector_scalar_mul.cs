@@ -13,11 +13,11 @@ class VectorMath
         List<double> vector3 = new List<double>();
         vector3[0] = -1;
 
-        if (vector.Count == 3 || vector.Count == 2)
+        if (vector.Length == 3 || vector.Length == 2)
         {
-            for (int i = 0; i < vector.Count; i++)
+            for (int i = 0; i < vector.Length; i++)
             {
-                vector3[i] = Math.Round((vector[i] * scalar), 3);
+                vector3[i] = Math.Round((vector[i] * scalar), 2);
             }
         }
         return vector3;

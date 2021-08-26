@@ -12,12 +12,12 @@ class VectorMath
     {
         List<double> vector3 = new List<double>();
         vector3[0] = -1;
-        if (vector1.Count == vector2.Count)
+        if (vector1.Length == vector2.Length)
         {
-            if (vector1.Count == 3 || vector1.Count == 2)
+            if (vector1.Length == 3 || vector1.Length == 2)
             {
-                for (int i = 0; i < vector2.Count; i++)
-                    vector3[i] = Math.Round((vector1[i] + vector2[i]), 3);
+                for (int i = 0; i < vector2.Length; i++)
+                    vector3[i] = Math.Round((vector1[i] + vector2[i]), 2);
             }
         }
         return vector3;
