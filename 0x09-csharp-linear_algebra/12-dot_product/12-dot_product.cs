@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 ///<summary> VectorMath class</summary>
-class VectorMath
+public class VectorMath
 {
     ///<summary> DotProduct methode to calculat the dot product of two vectors</summary>
     ///<param name="vector1"> Vector 1</param>
@@ -11,14 +11,14 @@ class VectorMath
     public static double DotProduct(double[] vector1, double[] vector2)
     {
         double DotValue = -1;
-        if (vector1.Count == vector2.Count)
+        if (vector1.Length == vector2.Length)
         {
-            if (vector2.Count == 2 || vector2.Count == 3)
+            if (vector2.Length == 2 || vector2.Length == 3)
             { 
                 DotValue++;
-                for (int i = 0; i < vector1.Count; i++)
+                for (int i = 0; i < vector1.Length; i++)
                 {
-                    DotValue += Math.Round((vector1[i] * vector2[i]), 3);
+                    DotValue += Math.Round((vector1[i] * vector2[i]), 2);
                 }
             }
         }
