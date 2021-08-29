@@ -11,7 +11,6 @@ class VectorMath
     public static double[] Multiply(double[] vector, double scalar)
     {
         double[] vector3 = new double[vector.Length];
-        vector3[0] = -1;
 
         if (vector.Length == 3 || vector.Length == 2)
         {
@@ -19,7 +18,8 @@ class VectorMath
             {
                 vector3[i] = Math.Round((vector[i] * scalar), 2);
             }
+            return vector3;    
         }
-        return vector3;
+        return new double [] { -1};
     }
 }
