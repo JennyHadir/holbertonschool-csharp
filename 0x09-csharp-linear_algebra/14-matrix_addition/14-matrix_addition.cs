@@ -1,7 +1,7 @@
 ﻿using System;
 
 ///<summary> MatrixMath class</summary>
-public class MatrixMath
+class MatrixMath
 {
     ///<summary>Add method to add two matrix with the same size</summary>
     ///<param name="matrix1"> matrix1</param>
