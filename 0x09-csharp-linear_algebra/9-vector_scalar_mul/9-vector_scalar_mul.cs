@@ -5,12 +5,12 @@ using System.Collections.Generic;
 class VectorMath
 {
     ///<summary> Multiply methode to multiply a vector and a scalar</summary>
-    ///<param name="vector1"> Vector 1</param>
+    ///<param name="vector"> Vector 1</param>
     ///<param name="scalar"> scalar multipliar </param>
     ///<return> Vector 3 containing the multiplication of a vector and a scalar </return>
     public static double[] Multiply(double[] vector, double scalar)
     {
-        List<double> vector3 = new List<double>();
+        double[] vector3 = new double[vector.Length];
         vector3[0] = -1;
 
         if (vector.Length == 3 || vector.Length == 2)
