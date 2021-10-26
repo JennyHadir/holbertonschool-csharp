@@ -4,9 +4,9 @@
 public abstract class Base
 {
     /// Name
-    public string name;
+    public string name { get; set; }
 
-    /// Override method
+    /// <summary>Override method</summary>
     public override string ToString()
     {
         return (name + " is a " + this.GetType());
@@ -14,52 +14,53 @@ public abstract class Base
 
 }
 
-/// Interactive interface
+/// <summary>Interactive interface</summary>
 public interface IInteractive
 {
-    /// Interact methode
+    /// <summary>Interact methode</summary>
     void Interact();
 }
 
-/// Breakable interface
+/// <summary>Breakable interface</summary>
 public interface IBreakable
 {
-    /// Durability prop
+    /// <summary>Durability prop</summary>
     int durability { get; set; }
 
-    /// Break method
+    /// <summary>Break method</summary>
     void Break();
 }
 
-/// Collectable interface
+/// <summary>Collectable interface</summary>
 public interface ICollectable
 {
-    /// IsCollected prop
+    ///<summary> IsCollected prop</summary>
     bool isCollected { get; set; }
 
-    /// Collect method
+    /// <summary>Collect method</summary>
     void Collect();
 }
 
-/// TestObject Base
+/// <summary>TestObject Base</summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable
 {
-    /// Drability implementation
+    ///<summary> Drability implementation</summary>
     public int durability { get; set; }
-    /// isCollected implementation
+    /// <summary>isCollected implementation</summary>
     public bool isCollected { get; set;} 
 
-    /// Interact method implementation
+
+    /// <summary>Interact method implementation</summary>
     public void Interact()
     {
     }
 
-    /// Break method implementation
+    /// <summary>Break method implementation</summary>
     public void Break()
     {
     }
 
-    /// Collect method implementation
+    /// <summary>Collect method implementation</summary>
     public void Collect()
     {
     }
