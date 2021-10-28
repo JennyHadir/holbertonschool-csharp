@@ -35,7 +35,7 @@ public class Player
         {
             damage = 0;
         }
-        Console.WriteLine("{0} takes {1} damage!", this.name, this.damage);
+        Console.WriteLine("{0} takes {1} damage!", this.name, damage);
         hp -= damage;
     }
 
@@ -46,7 +46,7 @@ public class Player
         {
             heal = 0;
         }
-        Console.WriteLine("{0} heals {1} HP!", this.name, this.heal);
+        Console.WriteLine("{0} heals {1} HP!", this.name, heal);
         hp += heal;
     }
 
