@@ -109,7 +109,7 @@ public class Player
         }
         else if (e.currentHp < maxHp / 2 && e.currentHp >= maxHp / 4)
         {
-            status = $"{this.name} isn't doing too great.."; 
+            status = $"{this.name} isn't doing too great..."; 
         }
         else if (e.currentHp > 0 && e.currentHp < maxHp / 4)
         {
