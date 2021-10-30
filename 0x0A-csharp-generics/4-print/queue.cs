@@ -32,19 +32,17 @@ public class Queue<T>
     /// Removes the first node in the queue a returns its value
     public T Dequeue()
     {
-        if (head == null)
+        if (head != null)
         {
-            Console.WriteLine("Queue is empty");
-            count = 0;
-            return default(T);
+            T NodeValue = head.value;
+            head = head.next;
+            count--;
+            return NodeValue;
         }
         else
         {
-            T NodeValue = head.value;
-            Node newHead = head.next;
-            head = newHead;
-            count--;
-            return NodeValue;
+            Console.WriteLine("Queue is empty");
+            return default(T);
         }
     }
 
@@ -56,10 +54,11 @@ public class Queue<T>
         if (head == null)
         {
             head = nNode;
+            tail = nNode;
         }
         else
         {
-            nNode.next = head;
+            tail.next = nNode;
             tail = nNode;
         }
         count++;
