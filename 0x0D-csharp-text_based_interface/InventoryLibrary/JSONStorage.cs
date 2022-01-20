@@ -11,8 +11,8 @@ namespace InventoryLibrary
         /// <summary>
         /// 
         /// </summary>
-        public Dictionary<string, dynamic> objects { get; set; }
-    
+        public Dictionary<string, dynamic> objects = new Dictionary<string, dynamic>();
+
         /// <summary>
         /// All mthods to return a dictionary
         /// </summary>
